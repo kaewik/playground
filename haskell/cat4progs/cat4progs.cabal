@@ -26,6 +26,8 @@ source-repository head
 library
   exposed-modules:
       Lib
+      Pair2
+      PreList
   other-modules:
       Paths_cat4progs
   hs-source-dirs:
