@@ -1,0 +1,13 @@
+{
+  "name": "typescript-playground",
+  "version": "1.0.0",
+  "main": "lib/src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "dependencies": {
+    "@getgo/byot-js": "^15.3.9",
+    "typescript": "4.0.5"
+  }
+}
