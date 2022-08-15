@@ -1,21 +1,14 @@
-use std::iter;
-
 pub fn tribonacci(signature: &[f64; 3], n: usize) -> Vec<f64> {
     let mut tribonacci_sequence = signature.to_vec();
-    if n <= 3 {
-        return tribonacci_sequence.get(0..n).unwrap_or(&[]).to_vec();
-    }
+    tribonacci_sequence.resize(n, 0.);
+
     for i in 3..n {
-        let sub_slice = tribonacci_sequence.get(i-3..i).unwrap();
-        let new_number: f64 = sub_slice.iter().sum();
-        tribonacci_sequence.push(new_number);
+        tribonacci_sequence[i] = tribonacci_sequence[i-1] 
+            + tribonacci_sequence[i-2] 
+            + tribonacci_sequence[i-3];
     }
 
     tribonacci_sequence
-}
-
-fn zeros(size: usize) -> Vec<f64> {
-    iter::repeat(0.).take(size).collect()
 }
 
 #[test]
