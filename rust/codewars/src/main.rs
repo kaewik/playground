@@ -1,7 +1,8 @@
-
+mod tribonacci;
 
 fn main() {
     array_diff([1,2,3].to_vec(), [2,2].to_vec());
+    tribonacci::tribonacci(&[0f64,0_f64,2f64], 10);
 }
 
 fn array_diff<T: PartialEq>(a: Vec<T>, b: Vec<T>) -> Vec<T> {
