@@ -32,3 +32,4 @@ data Either2 a b = Left2 a | Right2 b
 instance Bifunctor Either2 where
   bimap f g (Left2 a) = (Left2 . f) a
   bimap f g (Right2 a) = (Right2 . g) a
+
