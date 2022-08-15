@@ -12,7 +12,7 @@
         "experimentalDecorators": true,
         "incremental": true,
         "composite": true,
-        "outDir": "lib",
+        "outDir": "dist",
         "resolveJsonModule": true,
         "esModuleInterop": true
     },
